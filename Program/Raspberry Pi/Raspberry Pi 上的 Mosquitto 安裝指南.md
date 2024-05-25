@@ -61,6 +61,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 + Raspberry Pi 4B（2/4/8 GB）
 至於最新的 Raspberry Pi 5 尚未獲得測試過，因此無法提供數據。
 
+[回到快速導覽](#快速導覽)
+
 
 ### 安裝作業系統
 這裡建議採用官方提供的 Raspberry Pi OS（原名 Raspbin）以及其衍伸系列，軟硬體契合度高也方便使用。
@@ -79,6 +81,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 > [!IMPORTANT]
 > 本教學是以上面三種作業系統為基礎撰寫，使用其他平台也可以安裝但是可能步驟會有差異。
 
+[回到快速導覽](#快速導覽)
+
 
 # 安裝 Mosquitto
 
@@ -92,6 +96,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 4. 更新 APT 當中的既有套件，輸入以下指令：`sudo apt-get upgrade`
 5. 等待更新完成。
 6. APT 全部更新完成。
+
+[回到快速導覽](#快速導覽)
 
 
 ## 安裝 Mosquitto
@@ -118,6 +124,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 > 仍不行可能是 APT 套件錯誤，請重新執行 APT 更新步驟。
 > 
 > 還是不行請檢察網路環境與設備狀況。
+
+[回到快速導覽](#快速導覽)
 
 
 ## 關閉安全模式並開啟外部連線權限
@@ -168,6 +176,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 
      `sudo service mosquitto start`
 
+[回到快速導覽](#快速導覽)
+
 
 ### 其他可用相關指令
 
@@ -176,6 +186,9 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 + 找出正在監聽的 Port：`netstat -tulpn | grep LISTEN`
 + 找出 Port 的使用狀況：`netstat -tulpn | grep :80`
 + 網路設定文件：`sudo nano /etc/dhcpcd.conf`
+
+[回到快速導覽](#快速導覽)
+
 
 ### Mosquitto-clients 單平台測試
 此步驟是給予有安裝 Mosquitto-clients 的使用者進行測試的步驟，以確認在同一設備內部 Mosquitto 是否也正常運作。
@@ -201,6 +214,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
      > 「-m」代表傳送內容，「“ hello! this is a test.”」就是傳送的內容。
 
 5. 如果第一個 Raspberry Pi 的 console （命令列模式）有收到訊息，代表成功。
+
+[回到快速導覽](#快速導覽)
 
 
 ## 後續優化工作
@@ -234,6 +249,8 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
       ```
 
 4. 儲存檔案並取代舊有檔案，之後重啟 Raspberry Pi 即可。
+
+[回到快速導覽](#快速導覽)
 
 
 # 結論
