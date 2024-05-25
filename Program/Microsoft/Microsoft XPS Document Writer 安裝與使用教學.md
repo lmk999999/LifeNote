@@ -29,8 +29,7 @@
 |
 [回到程式類別](../Program.md)
 |
-[回到筆記說明](.../README.md)
-|
+
 
 
 # Microsoft XPS Document Writer
@@ -123,6 +122,4 @@ Lmk999999
 [回到主題簡介](./Microsoft.md)
 |
 [回到程式類別](../Program.md)
-|
-[回到筆記說明](.../README.md)
 |
