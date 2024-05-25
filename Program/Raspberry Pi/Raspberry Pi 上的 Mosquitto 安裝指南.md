@@ -143,7 +143,7 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
      listener 1883
      bind_interface eth0
      ```
-4. 完成的 mosquitto.conf 文件類似下表（黃色是追加的部分）
+4. 完成的 mosquitto.conf 文件類似下表：
      ```conf
      # Place your local configuration in /etc/mosquitto/conf.d/
      #
