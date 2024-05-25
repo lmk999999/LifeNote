@@ -11,6 +11,15 @@
 - [XML Paper Specification Viewer](#xml-paper-specification-viewer)
   - [簡介](#簡介-2)
   - [安裝](#安裝-1)
+- [結論](#結論)
+  - [優點](#優點)
+  - [缺點](#缺點)
+  - [相關連結](#相關連結)
+    - [技術參考資料](#技術參考資料)
+    - [基礎參考資料](#基礎參考資料)
+  - [筆者](#筆者)
+    - [主筆](#主筆)
+    - [協助檢稿](#協助檢稿)
 
 
 |
@@ -30,7 +39,9 @@ Microsoft XPS Document Writer （XPS 檔案寫入器）是一台虛擬的印表�
 
 相關資訊可參考 [Microsoft 官方文件](https://learn.microsoft.com/zh-tw/windows/win32/printdocs/microsoft-xps-document-writer)。
 
-> [!TIP] 小事實
+> [!TIP] 
+> **小事實**
+>
 > 事實上，PDF 列印程式也可以做到類似的事情，在大多情況下使用 PDF 列印程式即可。本方案的好處在於可以列印極低解析度的成品並快速放大，檔案本身也不會如 PDF 一樣過於複雜。
 
 
@@ -65,6 +76,43 @@ XML Paper Specification Viewer 與 Microsoft XPS Document Writer 同樣內建於
 4. 在搜尋欄位搜尋「XPS」，並找到「XPS Viewer」或是「XPS 查看器」，並且勾選。
 5. 勾選後按下一步，確認勾選項目包含「XPS Viewer」或是「XPS 查看器」，即可按下「確定」並安裝。
 6. Windows 11 即會開始安裝。
+
+
+# 結論
+
+## 優點
+
++ 目前懶得寫，抱歉。
+
+
+## 缺點
+
+- 目前懶得寫，抱歉。
+
+
+## 相關連結
+
+
+### 技術參考資料
+以下網站包含本文章所教學的內容，本教學是從其中萃取出並測試，然後重新敘述。
+
++ 暫無
+
+
+### 基礎參考資料
+閱讀本文張前請具備以下資料中的基礎能力與設備。
+
++ 暫無
+
+
+## 筆者
+
+### 主筆
+Lmk999999
+
+
+### 協助檢稿
+無
 
 
 ---

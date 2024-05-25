@@ -14,6 +14,7 @@
   - [更新 APT](#更新-apt)
   - [安裝 Mosquitto](#安裝-mosquitto-1)
   - [關閉安全模式並開啟外部連線權限](#關閉安全模式並開啟外部連線權限)
+    - [其他可用相關指令](#其他可用相關指令)
     - [Mosquitto-clients 單平台測試](#mosquitto-clients-單平台測試)
   - [後續優化工作](#後續優化工作)
     - [DHCP IP 定址設定](#dhcp-ip-定址設定)
@@ -167,28 +168,30 @@ Mosquitto 是 MQTT 當中扮演 Broker 角色的伺服器套件，依照加入 B
 
      `sudo service mosquitto start`
 
-> [!NOTE] 其他可用相關指令
-> 顯示 Mosquitto 的版本資訊，並且會註解是否開啟安全模式：`mosquitto -v`
-> 
-> 開啟 Mosquitto 設定檔：`sudo nano /etc/mosquitto/mosquitto.conf`
-> 
-> 找出正在監聽的 Port：`netstat -tulpn | grep LISTEN`
-> 
-> 找出 Port 的使用狀況：`netstat -tulpn | grep :80`
-> 
-> 網路設定文件：`sudo nano /etc/dhcpcd.conf`
+
+### 其他可用相關指令
+
++ 顯示 Mosquitto 的版本資訊，並且會註解是否開啟安全模式：`mosquitto -v`
++ 開啟 Mosquitto 設定檔：`sudo nano /etc/mosquitto/mosquitto.conf`
++ 找出正在監聽的 Port：`netstat -tulpn | grep LISTEN`
++ 找出 Port 的使用狀況：`netstat -tulpn | grep :80`
++ 網路設定文件：`sudo nano /etc/dhcpcd.conf`
 
 ### Mosquitto-clients 單平台測試
 此步驟是給予有安裝 Mosquitto-clients 的使用者進行測試的步驟，以確認在同一設備內部 Mosquitto 是否也正常運作。
 
 1. 開啟第一個 Raspberry Pi 的 console （命令列模式）。
 2. 並使其進入訂閱者監聽狀態，輸入以下指令：`mosquitto_sub -t "#"`
-     > [!NOTE] 指令解釋
+     > [!NOTE] 
+     > **指令解釋**
+     >
      > 「-t」代表指定主題，「#」代表訂閱全部主題。
 
 3. 開啟第二個 Raspberry Pi 的 console （命令列模式）。
 4. 發送單一訊息，輸入以下指令：`mosquitto_pub -h <linux_ip> -p 1883 -t "test/MQTT" -m "hello! this is a test."`
-     > [!NOTE] 指令解釋
+     > [!NOTE] 
+     > **指令解釋**
+     >
      > 「-h」代表指定 IP，請填寫 Broker 主機的 IP，「<linux_ip>」代表IP位址，如果為同一設備可以跳過不填寫。
      > 
      > 「-t」代表指定連接埠，「1883」是預設的連接埠。
