@@ -33,7 +33,9 @@
 > [!TIP]
 > 本導覽中，內容必須要到一定程度的項目才會顯示。
 
-<!-- + [程式（`Programmer`）](./Program/Program.md) -->
++ [程式（`Programmer`）](./Program/Program.md)
+  + [Raspberry Pi（樹莓派）](./Program/Raspberry%20Pi/Raspberry%20Pi.md)
+  + [Microsoft（微軟）](./Program/Microsoft/Microsoft.md)
 + [遊戲（`Gamer`）](./Game/Game.md)
   + [Factorio （異星工廠）](./Game/Factorio/Factorio.md)
 <!-- + [娛樂（`Entertainment`）](./Entertainment/Entertainment.md) -->

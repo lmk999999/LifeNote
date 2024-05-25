@@ -7,4 +7,4 @@
 + [Factorio Docker 伺服器](./FactorioServerInDocker.md)
 
 
-[回到筆記說明](../README.md)
+[回到遊戲類別](../Game.md)
