@@ -12,6 +12,10 @@
 # 筆記導覽
 
 + [Factorio Docker 伺服器](./Factorio%20Docker%20伺服器.md)
++ [Factorio 模組的安裝](./Factorio%20模組的安裝.md)
++ [Factorio 模組介紹：Industrial Revolution 3](./Factorio%20模組介紹：Industrial%20Revolution%203.md)
++ [Factorio 模組介紹：Space Exploration](./Factorio%20模組介紹：Space%20Exploration.md)
++ [Factorio 模組介紹：Krastorio 2](./Factorio%20模組介紹：Krastorio%202.md)
 
 
 [回到遊戲類別](../Game.md)
