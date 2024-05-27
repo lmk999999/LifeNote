@@ -333,8 +333,8 @@ Git 的初始化指令，將資料夾內的所有內容（包括子資料夾的�
 6. 打開 `cmd`
 7. 使用指令 `git config --global user.name ******使用者名稱******` 設定這份專案的使用者名稱。
 8. 使用指令 `git config --global user.email ******使用者信箱******` 設定這份專案的使用者信箱。
-   > [!NOTE]
-   > `--global ` 參數設定取代作業系統裡的預設使用者名稱和使用者信箱，如果是個別專案有個別使用者，則不用增加這個指令。
+> [!NOTE]
+> `--global ` 參數設定取代作業系統裡的預設使用者名稱和使用者信箱，如果是個別專案有個別使用者，則不用增加這個指令。
 
 [回到快速導覽](#快速導覽)
 
@@ -385,54 +385,54 @@ graph LR
     +  如果列表有遠端的專案：請直接前往下一個步驟。
     +  如果列表沒有遠端的專案：
          1. 使用指令 `git remote add ***本地專案名稱*** ***遠端專案網址***`
-            > [!NOTE]
-            > 本步驟為本地端的 Git 增加一個遠端的數據庫，本地端的辨識名稱是 `***本地專案名稱***`（此名稱可更改，建議全英文），而連結的遠端數據庫是 `***遠端專案網址***`。
+> [!NOTE]
+> 本步驟為本地端的 Git 增加一個遠端的數據庫，本地端的辨識名稱是 `***本地專案名稱***`（此名稱可更改，建議全英文），而連結的遠端數據庫是 `***遠端專案網址***`。
 
-            > [!NOTE]
-            > 如果遠端的數據庫在本地端的辨識名稱設定錯誤，可以透過 `git remote rename 錯誤名稱 修正名稱` 的指令來更換。或是使用 `git remote remove 錯誤名稱` 來直接刪除該辨識名稱的連結。
+> [!NOTE]
+> 如果遠端的數據庫在本地端的辨識名稱設定錯誤，可以透過 `git remote rename 錯誤名稱 修正名稱` 的指令來更換。或是使用 `git remote remove 錯誤名稱` 來直接刪除該辨識名稱的連結。
          2. 使用指令 `git pull`
          3. 進入下一個步驟。
 4.  使用指令 `git push -u ***遠端專案網址*** ***要推送的分支名稱***`
 
-      > [!WARNING]
-      > 如果是維護版（hotfix）、開發版（develop）或是其他非 `master` 的 **分支**，請先確認您的本地端是否在相應的 **分支**。
+> [!WARNING]
+> 如果是維護版（hotfix）、開發版（develop）或是其他非 `master` 的 **分支**，請先確認您的本地端是否在相應的 **分支**。
 
-      > [!NOTE]
-      > 透過本地端的辨識名稱，指定了一個遠端的數據庫，並將該庫中的 `***要推送的分支名稱***` 分支，更新推送（push）成本地端 `***要推送的分支名稱***` 的內容。
-      > 
-      > 如果不加上 `***要推送的分支名稱***` 則預設推送 `master` 分支。
+> [!NOTE]
+> 透過本地端的辨識名稱，指定了一個遠端的數據庫，並將該庫中的 `***要推送的分支名稱***` 分支，更新推送（push）成本地端 `***要推送的分支名稱***` 的內容。
+> 
+> 如果不加上 `***要推送的分支名稱***` 則預設推送 `master` 分支。
 
-      > [!NOTE]
-      > 在 `git push -u` 指令中，`-u` 參數的意義是將當前分支設置為其對應的上游分支（upstream branch）。
-      >
-      > ```mermaid
-      > graph LR
-      >   subgraph Local Repository
-      >      A[main] --> B[feature]
-      >   end
-      > 
-      >   subgraph Remote Repository
-      >      C[origin/main]
-      >      D[origin/feature]
-      >   end
-      > 
-      >   B -- set upstream --> D
-      >   C -- tracks --> A
-      >   D -- tracks --> B
-      > ```
-      > 
-      > 1. **本地倉庫 (Local Repository)**：包含兩個分支：main 和 feature。 feature 是您正在開發的新功能分支。
-      > 2. **遠程倉庫 (Remote Repository)**：包含遠程分支：origin/main 和 origin/feature。
-      > 3. **設置上游分支 (set upstream)**：當您執行 git push -u origin feature 時，Git 將 origin/feature 設置為本地分支 feature 的上游分支。這表示本地 feature 分支將追蹤（track）遠程 origin/feature 分支的變更。
-      > 4. **後續操作簡化**：設置上游分支後，您可以直接執行 git push 和 git pull，而不需要每次都指定遠程倉庫和分支名稱。Git 知道本地 feature 分支的變更應該推送到 origin/feature，並從那裡拉取變更。
+> [!NOTE]
+> 在 `git push -u` 指令中，`-u` 參數的意義是將當前分支設置為其對應的上游分支（upstream branch）。
+>
+> ```mermaid
+> graph LR
+>   subgraph Local Repository
+>      A[main] --> B[feature]
+>   end
+> 
+>   subgraph Remote Repository
+>      C[origin/main]
+>      D[origin/feature]
+>   end
+> 
+>   B -- set upstream --> D
+>   C -- tracks --> A
+>   D -- tracks --> B
+> ```
+> 
+> 1. **本地倉庫 (Local Repository)**：包含兩個分支：main 和 feature。 feature 是您正在開發的新功能分支。
+> 2. **遠程倉庫 (Remote Repository)**：包含遠程分支：origin/main 和 origin/feature。
+> 3. **設置上游分支 (set upstream)**：當您執行 git push -u origin feature 時，Git 將 origin/feature 設置為本地分支 feature 的上游分支。這表示本地 feature 分支將追蹤（track）遠程 origin/feature 分支的變更。
+> 4. **後續操作簡化**：設置上游分支後，您可以直接執行 git push 和 git pull，而不需要每次都指定遠程倉庫和分支名稱。Git 知道本地 feature 分支的變更應該推送到 origin/feature，並從那裡拉取變更。
 
-      > [!NOTE]
-      > 如果要完整推送整個專案的所有分支，則使用以下指令擇一：
-      > + `git push -u ***遠端專案網址*** '*:*'`
-      > + `git push -u ***遠端專案網址*** --all`
-      > + `git push -u --all origin`
-      >
-      > 參考資料：[Git 一次性 pull push 所有的分支](https://blog.csdn.net/bingyu9875/article/details/84841521)
+> [!NOTE]
+> 如果要完整推送整個專案的所有分支，則使用以下指令擇一：
+> + `git push -u ***遠端專案網址*** '*:*'`
+> + `git push -u ***遠端專案網址*** --all`
+> + `git push -u --all origin`
+>
+> 參考資料：[Git 一次性 pull push 所有的分支](https://blog.csdn.net/bingyu9875/article/details/84841521)
 
 [回到快速導覽](#快速導覽)
 
@@ -446,13 +446,13 @@ graph LR
    2. 使用指令 `git status` ，確認是否所有更改的檔案已經顯示綠色。
    3. 使用指令 `git commit -m "***版本敘述***"`。
    
-      > [!NOTE]
-      > 版本編號可以另外用標籤（`git tag`）設定。
+> [!NOTE]
+> 版本編號可以另外用標籤（`git tag`）設定。
 
-      > [!NOTE]
-      > 如果這次的修改要覆蓋前一個提交，可以在指令中追加 `--Amend`。
-      > 
-      > 因此提交指令會是：`git commit -m --Amend`。
+> [!NOTE]
+> 如果這次的修改要覆蓋前一個提交，可以在指令中追加 `--Amend`。
+> 
+> 因此提交指令會是：`git commit -m --Amend`。
 
    4. 使用指令 `git log HEAD...HEAD~~2`，可以確認該 `commit` 是否已經在本地端 Git 完成。
 
@@ -464,17 +464,17 @@ graph LR
     +  如果列表有遠端的專案：請直接前往下一個步驟。
     +  如果列表沒有遠端的專案：
          1. 使用指令 `git remote add ***本地專案名稱*** ***遠端專案網址***`
-            > [!NOTE]
-            > 本步驟為本地端的 Git 增加一個遠端的數據庫，本地端的辨識名稱是 `***本地專案名稱***`（此名稱可更改，建議全英文），而連結的遠端數據庫是 `***遠端專案網址***`。
+> [!NOTE]
+> 本步驟為本地端的 Git 增加一個遠端的數據庫，本地端的辨識名稱是 `***本地專案名稱***`（此名稱可更改，建議全英文），而連結的遠端數據庫是 `***遠端專案網址***`。
 
-            > [!NOTE]
-            > 如果遠端的數據庫在本地端的辨識名稱設定錯誤，可以透過 `git remote rename 錯誤名稱 修正名稱` 的指令來更換。或是使用 `git remote remove 錯誤名稱` 來直接刪除該辨識名稱的連結。
+> [!NOTE]
+> 如果遠端的數據庫在本地端的辨識名稱設定錯誤，可以透過 `git remote rename 錯誤名稱 修正名稱` 的指令來更換。或是使用 `git remote remove 錯誤名稱` 來直接刪除該辨識名稱的連結。
          2. 使用指令 `git pull`
          3. 進入下一個步驟。
    2.  使用指令 `git push -u ***遠端專案網址*** ***要推送的分支名稱***`
 
-         > [!WARNING]
-         > 如果是維護版（hotfix）、開發版（develop）或是其他非 `master` 的 **分支**，請先確認您的本地端是否在相應的 **分支**。
+> [!WARNING]
+> 如果是維護版（hotfix）、開發版（develop）或是其他非 `master` 的 **分支**，請先確認您的本地端是否在相應的 **分支**。
 
 ## 分支合併
 Git 的管理中，專案的分支與合併，都可以在本地端處理完畢後，再傳到遠端。不需要在遠端進行分支與合併的操作。
