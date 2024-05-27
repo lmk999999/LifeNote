@@ -83,21 +83,21 @@
    5. 設定不儲存 Studio 資訊，避免無用的資訊影響舊版本讀取與運行；將 `Don't save Jaspersoft Studio properties.` 選項打勾。
    6. 設定相容函式庫，將要相容的函式庫提供給 Studio，使其作為參考；將 `Compiler Settings` 區塊中的 `Version` 設定成 `6.5.1`。
 
-      > [!NOTE]
-      > 如果沒有 `6.5.1` 的選項，請將下載的 `JasperReport Library 6.5.1` 加入倒 Studio 之中，步驟如下：
-      > 1. 選擇 `Manage JasperReports Versions`。
-      > 2. 選擇 `Add From Path`。
-      > 3. 選擇 `Browse`。
-      > 4. 選擇 `JasperReport Library 6.5.1` 所放置的路徑資料夾。
-      > 5. 選擇 `OK`。
-      >
-      > 以上步驟結束後，就會看到相應的版本出現在選項中。
+> [!NOTE]
+> 如果沒有 `6.5.1` 的選項，請將下載的 `JasperReport Library 6.5.1` 加入倒 Studio 之中，步驟如下：
+> 1. 選擇 `Manage JasperReports Versions`。
+> 2. 選擇 `Add From Path`。
+> 3. 選擇 `Browse`。
+> 4. 選擇 `JasperReport Library 6.5.1` 所放置的路徑資料夾。
+> 5. 選擇 `OK`。
+>
+> 以上步驟結束後，就會看到相應的版本出現在選項中。
 
 4. 設定完畢，接下來問見的編寫都會以 `6.5.1` 的版本運行。
 
-      > [!NOTE]
-      > 本章節參考資料。
-      > + [Setting Compatibility with Earlier Versions of JasperReports Library](https://community.jaspersoft.com/documentation_/jaspersoft-studio-user-guide/v820/jss-user-_-compatibility-with-earlier-versions/)
+> [!NOTE]
+> 本章節參考資料。
+> + [Setting Compatibility with Earlier Versions of JasperReports Library](https://community.jaspersoft.com/documentation_/jaspersoft-studio-user-guide/v820/jss-user-_-compatibility-with-earlier-versions/)
 
 [回到快速導覽](#快速導覽)
 
