@@ -35,7 +35,9 @@
 
 + [程式（`Programmer`）](./Program/Program.md)
   + [Raspberry Pi（樹莓派）](./Program/Raspberry%20Pi/Raspberry%20Pi.md)
+  + [Git](./Program/Git/Git.md)
   + [Microsoft（微軟）](./Program/Microsoft/Microsoft.md)
+  + [Eclipse 基金會](./Program/Eclipse/Eclipse.md)
 + [遊戲（`Gamer`）](./Game/Game.md)
   + [Factorio （異星工廠）](./Game/Factorio/Factorio.md)
 <!-- + [娛樂（`Entertainment`）](./Entertainment/Entertainment.md) -->
